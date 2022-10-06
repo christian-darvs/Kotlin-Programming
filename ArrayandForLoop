@@ -1,0 +1,6 @@
+fun main(){
+val studentNames = listOf("Darvs", "Christian", "Elijah", "Shane")
+for (names in studentNames) {
+    println(names)
+	}
+}
