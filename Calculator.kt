@@ -1,17 +1,17 @@
-fun main(){
- 	calculate(10,3)
+import java.util.Scanner
+val sc = Scanner(System.`in`)
+fun main() {
+    print("Enter First Number: ")
+    val num1 = sc.nextInt()
+    print("Enter Second Number: ")
+    val num2 = sc.nextInt()
+    println(calculateNumbers(num1, num2))
 }
 
-fun calculate(x: Int, y: Int){
-    val add = x+y
-    val subtract = x-y
-    val product = x*y
-    val quotient = x/y
-    val modulo = x%y
-    
-   	println("${x} + ${y} = ${add}")
-    println("${x} - ${y} = ${subtract}")
-    println("${x} * ${y} = ${product}")
-    println("${x} / ${y} = ${quotient}")
-    println("${x} % ${y} = ${modulo}")
+fun calculateNumbers(num1: Int, num2: Int): String {
+    val add = num1 + num2
+    val minus = num1 - num2
+    val multiply = num1 * num2
+    val divide = num1 / num2
+    return "Sum: $add\nDifference: $minus\nProduct: $multiply\nQuotient: $divide"
 }
